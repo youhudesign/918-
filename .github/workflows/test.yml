@@ -76,12 +76,13 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-boot-wait.json
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-acpid.json
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/tree/main/i40e/rpext-index.json
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/tree/main/iavf/rpext-index.json
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/tree/main/ixgbe/rpext-index.json
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/tree/main/ixgbevf/rpext-index.json
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/tree/main/r8125/rpext-index.json
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/tree/main/mpt3sas/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/i40e/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/iavf/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbevf/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
 
       - name: 添加扩展驱动[dva3221]
         if: matrix.platform == 'dva3221'
